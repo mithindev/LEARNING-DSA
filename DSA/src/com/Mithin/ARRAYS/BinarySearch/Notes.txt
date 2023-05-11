@@ -1,0 +1,7 @@
+When to use Binary Search?
+
+
+When searching a large dataset as it has a time complexity of O(log n), which means that it is much faster than linear search.
+When the dataset is sorted.
+When data is stored in contiguous memory.
+Data does not have a complex structure or relationships.

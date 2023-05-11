@@ -1,0 +1,6 @@
+When to use Linear Search?
+
+✅When we are dealing with a small dataset.
+✅When you need to find an exact value.
+✅When you are searching a dataset stored in contiguous memory.
+✅When you want to implement a simple algorithm.
