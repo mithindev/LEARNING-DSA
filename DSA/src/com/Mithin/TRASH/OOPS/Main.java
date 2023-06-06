@@ -1,4 +1,4 @@
-package com.Mithin.TRASH;
+package com.Mithin.TRASH.OOPS;
 
 public class Main {
     public static void main (String[] args) {

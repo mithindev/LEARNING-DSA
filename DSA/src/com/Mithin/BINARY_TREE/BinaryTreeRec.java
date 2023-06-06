@@ -5,7 +5,6 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class BinaryTreeRec {
-
     static class Node {
         int data;
         Node left;
@@ -68,6 +67,7 @@ public class BinaryTreeRec {
         }
     }
 
+
 //    void levelOrderTransversal() {
 //        Queue<Node> queue = new LinkedList<Node>();
 //        queue.add(root);
@@ -96,6 +96,6 @@ public class BinaryTreeRec {
         tree.root = tree.createTree(tree.root);
 
         System.out.println("Level order traversal of binary tree is - ");
-        tree.levelOrderTransversal();
+//        tree.levelOrderTransversal();
     }
 }

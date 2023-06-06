@@ -1,4 +1,4 @@
-package com.Mithin.TRASH;
+package com.Mithin.TRASH.OOPS;
 
 public class Student extends User{
     private String school;

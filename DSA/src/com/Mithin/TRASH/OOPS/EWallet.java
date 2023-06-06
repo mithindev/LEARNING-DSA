@@ -1,4 +1,4 @@
-package com.Mithin.TRASH;
+package com.Mithin.TRASH.OOPS;
 
 import java.util.ArrayList;
 import java.util.List;
