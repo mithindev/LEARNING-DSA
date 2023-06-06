@@ -1,4 +1,4 @@
-package com.Mithin.DSA_ASSIGNMENT_2;
+package com.Mithin.TRASH.DSA_ASSIGNMENT_2;
 
 public class Main {
     public static void main(String[] args) {
