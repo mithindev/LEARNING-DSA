@@ -67,35 +67,47 @@ public class BinaryTreeRec {
         }
     }
 
+    void printInOrder (Node node) {
+        if (node == null) {
+            return;
+        }
 
-//    void levelOrderTransversal() {
-//        Queue<Node> queue = new LinkedList<Node>();
-//        queue.add(root);
-//
-//        while (!queue.isEmpty()) {
-//            int size = queue.size();
-//            for (int i = 0; i < size; i++) {
-//                Node temp = queue.poll();
-//                System.out.print(temp.data + " ");
-//
-//                if (temp.left != null) {
-//                    queue.add(temp.left);
-//                }
-//
-//                if (temp.right != null) {
-//                    queue.add(temp.right);
-//                }
-//            }
-//            System.out.println();
-//        }
-//    }
+        printInOrder(node.left);
+
+        System.out.print(node.data + " --> ");
+
+        printInOrder(node.right);
+    }
+
+    void printPreOrder (Node node) {
+        if (node == null) {
+            return;
+        }
+        System.out.print(node.data + " --> ");
+
+        printPreOrder(node.left);
+
+        printPreOrder(node.right);
+    }
+
+    void printPostOrder (Node node) {
+        if (node == null) {
+            return;
+        }
+        printPostOrder(node.right);
+
+        printPostOrder(node.left);
+
+        System.out.print(node.data + " --> ");
+    }
+
+    // 1 2 4 -1 -1 5 -1 -1 3 -1 6 -1 -1
 
 
     public static void main(String[] args) {
         BinaryTreeRec tree = new BinaryTreeRec();
         tree.root = tree.createTree(tree.root);
 
-        System.out.println("Level order traversal of binary tree is - ");
-//        tree.levelOrderTransversal();
+        tree.printInOrder(tree.root);
     }
 }
