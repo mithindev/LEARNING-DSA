@@ -121,26 +121,25 @@ public class DeQueueCustom {
     }
 
     public static void main(String[] args) {
-        DeQueueCustom queue = new DeQueueCustom(5);
+        DeQueueCustom queue = new DeQueueCustom(10);
 
-//        queue.delete_From_theFrontEnd();
         queue.Insert_from_theRearEnd(1);
-//        queue.Insert_from_theRearEnd(2);
-//        queue.Insert_from_theRearEnd(3);
-//        queue.Insert_from_theRearEnd(4);
-//        queue.Insert_from_theRearEnd(5);
+        queue.Insert_from_theRearEnd(2);
+        queue.Insert_from_theRearEnd(3);
+        queue.Insert_from_theRearEnd(4);
+        queue.Insert_from_theRearEnd(5);
 
-        queue.Insert_from_theFrontEnd(10);
-        queue.Insert_from_theFrontEnd(11);
+//        queue.Insert_from_theFrontEnd(10);
+//        queue.Insert_from_theFrontEnd(11);
 
-        System.out.println(queue.front);
+//        System.out.println(queue.front);
 
-//        queue.delete_From_theRearEnd();
-//
-//        queue.delete_From_theFrontEnd();
+        queue.delete_From_theRearEnd();
+        
+        queue.delete_From_theFrontEnd();
 
-        queue.peek_frontEnd();
-        queue.peek_rearEnd();
+//        queue.peek_frontEnd();
+//        queue.peek_rearEnd();
 
         queue.display();
     }
