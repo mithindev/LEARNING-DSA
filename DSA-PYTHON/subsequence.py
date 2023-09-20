@@ -14,8 +14,29 @@ def subsequence(word):
   
   return ans
 
-print(subsequence('abc'))
+# print(subsequence('abc'))
 
+
+def subsequence_recursive(word, ans):
+  if not word:
+    return ans
+  
+  ch = word[0]
+
+  temp = []
+
+  for seb in ans:
+    temp.append(seb + ch)
+  temp.extend(ans)
+
+  return subsequence_recursive(word[1:], temp)
+
+print(subsequence_recursive('abc', [""]))
+
+
+
+
+  
 
 
   
